@@ -5,7 +5,7 @@ const app = express()
 app.use(cors())
 
 app.listen(4000);
-console.log('listening on port 3000');
+console.log('listening on port 4000');
 
 app.get('/', (req, res) => res.send({ a: 'get' }))
 app.get('/set-status-code', (req, res) => res.status(500).send({ a: 'get-500' }))
