@@ -14,7 +14,7 @@ app.get('/set-status-code', (req: Express.Request, res: Express.Response) =>
 )
 
 app.post('/', (req: Express.Request, res: Express.Response) =>
-  res.status(400).send({ a: 'post' })
+  res.send({ a: 'post' })
 )
 app.post('/set-status-code', (req: Express.Request, res: Express.Response) =>
   res.status(400).send({ a: 'post-400' })
